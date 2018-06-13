@@ -110,7 +110,7 @@ class ExplCompTestCase(unittest.TestCase):
         prob['comp1.length'] = 3.
         prob['comp1.width'] = 2.
         prob.run_model()
-        assert_rel_error(self, prob['comp2.area'], 4.)
+        assert_rel_error(self, prob['comp2.area'], 6.)
         assert_rel_error(self, prob['comp3.area'], 6.)
 
         # total derivs
